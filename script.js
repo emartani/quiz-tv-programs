@@ -89,7 +89,18 @@ function checkAnswer(selected) {
         // Quando o som terminar, fala o texto da opção escolhida
         correctSound.onended = () => {
             const utterance = new SpeechSynthesisUtterance(selected);
-            utterance.lang = "pt-BR"; // voz em português
+            utterance.lang = "en-US";
+
+            // Quando terminar de falar, só então carrega a próxima questão
+            utterance.onend = () => {
+                currentQuestionIndex++;
+                if (currentQuestionIndex === questions.length) {
+                    endGame();
+                } else {
+                    loadQuestion();
+                }
+            };
+
             speechSynthesis.speak(utterance);
         };
 
@@ -97,16 +108,19 @@ function checkAnswer(selected) {
         document.getElementById("wrong-sound").play();
         mistakes++;
         document.getElementById("mistakes").textContent = mistakes;
-    }
 
-    currentQuestionIndex++;
-
-    if (currentQuestionIndex === questions.length) {
-        setTimeout(() => endGame(), 500);
-    } else {
-        loadQuestion();
+        // Se quiser também atrasar a próxima questão no erro:
+        setTimeout(() => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex === questions.length) {
+                endGame();
+            } else {
+                loadQuestion();
+            }
+        }, 1000); // espera 1 segundo após o som de erro
     }
 }
+
 
 
 function showFireworks() {
