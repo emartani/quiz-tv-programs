@@ -1,56 +1,56 @@
 [
     {
-        "image": "soap-opera.jpeg",
+        "image": "/images/soap-opera.jpeg",
         "answer": "Soap opera",
         "questionText": "Uma história longa na TV com muitos capítulos, mostrando a vida e aventuras de várias pessoas."
     },
     {
-        "image": "documentary.jpeg",
+        "image": "/images/documentary.jpeg",
         "answer": "Documentary",
         "questionText": "Um programa que mostra fatos reais sobre animais, pessoas ou lugares, para aprender coisas novas."
     },
     {
-        "image": "cooking-show.jpeg",
+        "image": "/images/cooking-show.jpeg",
         "answer": "Cooking show",
         "questionText": "Um programa onde pessoas cozinham receitas e ensinam como preparar comidas deliciosas."
     },
     {
-        "image": "music-program.jpeg",
+        "image": "/images/music-program.jpeg",
         "answer": "Music program",
         "questionText": "Um programa cheio de músicas, cantores e bandas tocando para divertir quem assiste."
     },
     {
-        "image": "reality-show.jpeg",
+        "image": "/images/reality-show.jpeg",
         "answer": "Reality show",
         "questionText": "Um programa que mostra pessoas reais vivendo desafios ou competições divertidas."
     },
     {
-        "image": "movies.jpeg",
+        "image": "/images/movies.jpeg",
         "answer": "Movies",
         "questionText": "Histórias contadas em forma de filme, com começo, meio e fim, para emocionar ou divertir."
     },
     {
-        "image": "weather-forecast.jpeg",
+        "image": "/images/weather-forecast.jpeg",
         "answer": "Weather forecast",
         "questionText": "Um programa que explica como estará o tempo: sol, chuva, frio ou calor."
     },
     {
-        "image": "sitcom.jpeg",
+        "image": "/images/sitcom.jpeg",
         "answer": "Sitcom",
         "questionText": "Uma série engraçada com personagens que vivem situações divertidas no dia a dia."
     },
     {
-        "image": "cartoon.jpeg",
+        "image": "/images/cartoon.jpeg",
         "answer": "Cartoon",
         "questionText": "Desenhos animados com personagens coloridos que vivem aventuras engraçadas."
     },
     {
-        "image": "the-news.jpeg",
+        "image": "/images/the-news.jpeg",
         "answer": "The news",
         "questionText": "Um programa que conta o que está acontecendo no mundo e na cidade."
     },
     {
-        "image": "sports-program.jpeg",
+        "image": "/images/sports-program.jpeg",
         "answer": "Sports program",
         "questionText": "Um programa que mostra jogos, esportes e atletas competindo."
     }
