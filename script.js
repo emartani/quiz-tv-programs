@@ -30,8 +30,13 @@ function loadQuestion() {
     }
 
     const questionObj = questions[currentQuestionIndex];
+
+    // Usa o campo image do JSON diretamente
     document.getElementById("question-image").src = questionObj.image;
+
+    // Usa o campo questionText ou um padrão
     document.getElementById("question").textContent = questionObj.questionText || "De que material é feito esse item da foto?";
+
     document.getElementById("question-number").textContent = `${currentQuestionIndex + 1} de ${questions.length}`;
 
     let answers = new Set();
@@ -53,6 +58,7 @@ function loadQuestion() {
         answersDiv.appendChild(btn);
     });
 }
+
 
 function startGame() {
     document.getElementById("start-screen").classList.add("hidden");
