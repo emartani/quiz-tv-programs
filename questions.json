@@ -1,6 +1,6 @@
 [
     {
-        "image": "Soap-opera.jpeg",
+        "image": "Soap opera.jpeg",
         "answer": "Soap opera",
         "questionText": "Uma história longa na TV com muitos capítulos, mostrando a vida e aventuras de várias pessoas."
     },
@@ -10,17 +10,17 @@
         "questionText": "Um programa que mostra fatos reais sobre animais, pessoas ou lugares, para aprender coisas novas."
     },
     {
-        "image": "Cooking-show.jpeg",
+        "image": "Cooking show.jpeg",
         "answer": "Cooking show",
         "questionText": "Um programa onde pessoas cozinham receitas e ensinam como preparar comidas deliciosas."
     },
     {
-        "image": "Music-program.jpeg",
+        "image": "Music program.jpeg",
         "answer": "Music program",
         "questionText": "Um programa cheio de músicas, cantores e bandas tocando para divertir quem assiste."
     },
     {
-        "image": "Reality-show.jpeg",
+        "image": "Reality show.jpeg",
         "answer": "Reality show",
         "questionText": "Um programa que mostra pessoas reais vivendo desafios ou competições divertidas."
     },
@@ -30,7 +30,7 @@
         "questionText": "Histórias contadas em forma de filme, com começo, meio e fim, para emocionar ou divertir."
     },
     {
-        "image": "Weather-forecast.jpeg",
+        "image": "Weather forecast.jpeg",
         "answer": "Weather forecast",
         "questionText": "Um programa que explica como estará o tempo: sol, chuva, frio ou calor."
     },
@@ -45,12 +45,12 @@
         "questionText": "Desenhos animados com personagens coloridos que vivem aventuras engraçadas."
     },
     {
-        "image": "The-news.jpeg",
+        "image": "The news.jpeg",
         "answer": "The news",
         "questionText": "Um programa que conta o que está acontecendo no mundo e na cidade."
     },
     {
-        "image": "Sports-program.jpeg",
+        "image": "Sports program.jpeg",
         "answer": "Sports program",
         "questionText": "Um programa que mostra jogos, esportes e atletas competindo."
     }
