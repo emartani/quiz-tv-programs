@@ -8,6 +8,14 @@
 </head>
 
 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MDGDKBTNT6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MDGDKBTNT6');
+</script>
 
 
 <body onload="stopBounceAfter5Seconds()">
@@ -25,7 +33,7 @@
     <div id="game-container" class="hidden">
         <h2 id="question"></h2>
         <div id="question-number"></div>
-        <img id="question-image" src="" alt="Imagem da pergunta" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        <img id="question-image" src="/images/tv-program.png" alt="Imagem da pergunta" style="max-width: 100%; height: auto; margin-bottom: 20px;">
         <div id="answers"></div>
         <div id="scoreboard">
             <div class="score-box">✅ Acertos: <span id="score">0</span></div>

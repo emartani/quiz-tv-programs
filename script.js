@@ -133,4 +133,10 @@ function endGame() {
 }
 
 // Carrega as perguntas assim que a página abrir
-window.onload = loadQuestions;
+window.onload = () => {
+    loadQuestions();
+
+    // Define uma imagem inicial antes do jogo começar
+    const imgElement = document.getElementById("question-image");
+    imgElement.src = "/images/tv-program.png";
+};
