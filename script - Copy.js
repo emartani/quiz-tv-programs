@@ -80,19 +80,9 @@ function checkAnswer(selected) {
     const correctAnswer = questions[currentQuestionIndex].answer;
 
     if (selected === correctAnswer) {
-        const correctSound = document.getElementById("correct-sound");
-        correctSound.play();
-
+        document.getElementById("correct-sound").play();
         score++;
         document.getElementById("score").textContent = score;
-
-        // Quando o som terminar, fala o texto da opção escolhida
-        correctSound.onended = () => {
-            const utterance = new SpeechSynthesisUtterance(selected);
-            utterance.lang = "pt-BR"; // voz em português
-            speechSynthesis.speak(utterance);
-        };
-
     } else {
         document.getElementById("wrong-sound").play();
         mistakes++;
@@ -107,7 +97,6 @@ function checkAnswer(selected) {
         loadQuestion();
     }
 }
-
 
 function showFireworks() {
     const fireworksDiv = document.getElementById("fireworks");
