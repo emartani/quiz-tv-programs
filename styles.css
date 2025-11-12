@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Alinhando os containers verticalmente */
+}
+
+#start-screen, #game-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffeb3b;
+    border-radius: 10px;
+    display: block; /* Alterado para 'block' para garantir o alinhamento vertical */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: row; /* Mantendo a exibição das informações de score e erros em linha */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.score-box {
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#fireworks {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex; /* Permite centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Efeito escurecido no fundo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Criamos uma div interna para conter o GIF */
+#fireworks img {
+    width: 50%; /* Reduz tamanho do GIF (ajuste conforme necessário) */
+    max-width: 400px; /* Limita o tamanho máximo */
+    height: auto; /* Mantém proporção */
+}
+
+#fireworks.show {
+    opacity: 1; /* Torna visível */
+    visibility: visible;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    color: #777;
+    margin-top: 20px; /* Opcional: adiciona um espaço acima do rodapé */
+}
+
+#question-image {
+    border: 2px solid #ddd; /* Adiciona uma borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+@media (max-width: 600px) {
+    .score-box {
+        width: 120px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
