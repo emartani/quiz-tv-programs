@@ -35,7 +35,13 @@ function loadQuestion() {
     document.getElementById("question-image").src = questionObj.image;
 
     // Usa o campo questionText ou um padrão
-    document.getElementById("question").textContent = questionObj.questionText || "De que material é feito esse item da foto?";
+    const textoQuestao = questionObj.questionText || "De que material é feito esse item da foto?";
+    document.getElementById("question").textContent = textoQuestao;
+
+    // 🔊 Fala em português ao carregar a questão
+    const utterance = new SpeechSynthesisUtterance(textoQuestao);
+    utterance.lang = "pt-BR";
+    speechSynthesis.speak(utterance);
 
     document.getElementById("question-number").textContent = `${currentQuestionIndex + 1} de ${questions.length}`;
 
@@ -58,6 +64,7 @@ function loadQuestion() {
         answersDiv.appendChild(btn);
     });
 }
+
 
 
 function startGame() {
